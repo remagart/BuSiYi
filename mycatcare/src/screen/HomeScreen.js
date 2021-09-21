@@ -1,11 +1,10 @@
 import * as React from 'react';
-import {View, StyleSheet} from 'react-native';
-import Navigator from './navigation/Navigator';
+import {Text, View, StyleSheet} from 'react-native';
 
-export default function App() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Navigator />
+      <Text> textInComponent </Text>
     </View>
   );
 }
