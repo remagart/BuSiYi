@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'blankscreen.dart';
 import './tab2/settingscreen.dart';
+import './home/homepagescreen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State {
   int _currentIndex = 0;
   final List _children = [
-    PlaceholderWidget(color: Colors.white),
+    const HomepageScreen(),
     PlaceholderWidget(color: Colors.deepOrange),
     const SettingScreen(),
   ];
