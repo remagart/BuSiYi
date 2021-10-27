@@ -27,18 +27,18 @@ class _HomeState extends State {
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped,
         currentIndex: _currentIndex,
-        items: [
+        items: const [
           BottomNavigationBarItem(
-            icon: new Icon(Icons.home),
+            icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            label: 'Message',
+            icon: Icon(Icons.attach_money),
+            label: '錢包',
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.person),
-            label: 'Profile',
+            icon: Icon(Icons.settings),
+            label: 'Setting',
           ),
         ],
       ),
