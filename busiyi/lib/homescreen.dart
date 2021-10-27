@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'blankscreen.dart';
+import './tab2/settingscreen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _HomeState extends State {
   final List _children = [
     PlaceholderWidget(color: Colors.white),
     PlaceholderWidget(color: Colors.deepOrange),
-    PlaceholderWidget(color: Colors.green)
+    const SettingScreen(),
   ];
 
   @override
