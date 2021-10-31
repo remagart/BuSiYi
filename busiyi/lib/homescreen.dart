@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'blankscreen.dart';
 import './tab2/settingscreen.dart';
 import './home/homepagescreen.dart';
+import 'tab1/catscreen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _HomeState extends State {
   int _currentIndex = 0;
   final List _children = [
     const HomepageScreen(),
-    PlaceholderWidget(color: Colors.deepOrange),
+    const CatScreen(),
     const SettingScreen(),
   ];
 
@@ -22,7 +23,7 @@ class _HomeState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('123456'),
+        title: const Text('不思議'),
       ),
       body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
