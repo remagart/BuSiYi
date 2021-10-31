@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './cattabview.dart';
+import './catcardoverview.dart';
 
 class CatScreen extends StatelessWidget {
   const CatScreen({Key? key}) : super(key: key);
@@ -11,11 +12,9 @@ class CatScreen extends StatelessWidget {
         // height: 500,
         // color: Colors.yellow,
         child: Column(
-      children: [
-        Container(
-          child: CatTabView(),
-        ),
-        Text('123'),
+      children: const [
+        CatTabView(),
+        CatCardOverview(),
       ],
     ));
   }
