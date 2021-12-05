@@ -6,12 +6,12 @@ class CatTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 4,
         child: SizedBox(
           height: 200,
           child: Column(
             children: [
-              TabBar(labelColor: Colors.black87, tabs: [
+              const TabBar(labelColor: Colors.black87, tabs: [
                 Tab(
                   text: '不思議1號',
                 ),
@@ -20,6 +20,9 @@ class CatTabView extends StatelessWidget {
                 ),
                 Tab(
                   text: '不思議3號',
+                ),
+                Tab(
+                  text: '不思議4號',
                 )
               ]),
               Expanded(
@@ -37,6 +40,9 @@ class CatTabView extends StatelessWidget {
                   ),
                   Container(
                     color: Colors.orange,
+                  ),
+                  Container(
+                    color: Colors.yellow,
                   ),
                 ],
               ))

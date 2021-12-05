@@ -1,12 +1,31 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class CardView extends StatelessWidget {
-  const CardView({Key? key}) : super(key: key);
+  IconData iconName;
+  String title;
+  String txt;
+  CardView(
+      {Key? key, this.title = "", this.iconName = Icons.ac_unit, this.txt = ""})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var SCREEN_WIDTH = MediaQuery.of(context).size.width;
     return Container(
-      child: Text('123456'),
+      color: Colors.blue,
+      width: (SCREEN_WIDTH - 32 - 16) / 2,
+      height: 50,
+      child: Column(
+        children: [
+          Container(
+            child: Row(
+              children: [Icon(iconName), Text(title)],
+            ),
+          ),
+          Text(txt)
+        ],
+      ),
     );
   }
 }
